@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Untitled</title>
+        <link rel="stylesheet" type="text/css" href="media/main.css"/>
+        <script type="text/javascript" src="media/jquery-1.8.min.js"></script>
+        <script type="text/javascript" charset="utf-8">
+        $(function(){
+            var $sel = {
+                 groups : $('.groups')
+                ,hidden : $('.hidden')
+                ,hideBed : $('.hideBed')
+            }
+            $sel.groups.click(function(){
+             $sel.hideBed.hide();   
+             $sel.hidden.hide();
+        
+             $("#" + $(this).attr("number")).show();
+            
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+      
+
+            <div id="interactionWrapper"> 
+            
+                <div id="bed">
+                   <div id="childNurseBed" class="hideBed"></div>
+
+                   <div class="formatText">    
+                   <div class="hidden" id="1"><div class="sectionTitle spaceBottom">INFANT</div><div class="sectionTitle">Sources of Stress</div><div class="spaceBottom">The hospital environment (e.g., bright lights, loud noises, change in room temperature), separation from the parents/caregiver, sleep disruption.</div><div class="sectionTitle">Stress Response</div><div>Crying, hyperactivity and nonspecific behaviors, such as jitteriness, agitation, elevated vital signs, breathing irregularities and feeding intolerances.</div></div>
+                
+                <div class="hidden" id="2"><div class="sectionTitle spaceBottom">TODDLER</div><div class="sectionTitle">Sources of Stress</div><div class="spaceBottom">Seperation from the parents/caregiver, changes in the environment, painful procedures (may perceive that the procedures are intended as punishment).</div><div class="sectionTitle">Stress Response</div><div>Hyperactivity, loud crying or screaming, regression (e.g., previsously toliet-trained toddlers may lose bladder control), withdrawal.</div></div>
+                
+                <div class="hidden" id="3"><div class="sectionTitle spaceBottom">PRESCHOOL</div><div class="sectionTitle">Sources of Stress</div><div class="spaceBottom">Seperation from the parents/caregiver, the unkown (e.g., fear of the dark or hospital personnel), multiple invasive procedures (may view procedures as punshment for previous bad behavior and may fear that these procedures will result in bodily mutilation).</div><div class="sectionTitle">Stress Response</div><div>Regression, assigning human characteristics to inanimate objects, withdrawal, asking questions or repaeatign phrases over and over, such as &quot;I want my mommy!&quot; or &quot;Why?&quot;</div></div>
+                
+                <div class="hidden" id="4"><div class="sectionTitle spaceBottom">SCHOOL-AGE</div><div class="sectionTitle">Sources of Stress</div><div class="spaceBottom">Seperation from daily routine, loss of control, immobility and bodily injury.</div><div class="sectionTitle">Stress Response</div><div>Regression, Sadness, denial of fears and act &quot;grown up,&quot; sleep disturbances. </div></div>
+                
+                <div class="hidden" id="5"><div class="sectionTitle spaceBottom">ADOLESCENTS</div><div class="sectionTitle">Sources of Stress</div><div class="spaceBottom">Seperation from peer groups, loss of control and identity, loss of privacy.</div><div class="sectionTitle">Stress Response</div><div>Withdrawal, regression, sleep disturbances, deny obvious pain and discomfort, especially if peers are present.. </div></div>
+            </div>
+                </div>
+
+                <div id="ageGroups">
+                    <div class="groups" number="1">
+                        <div id="infant"></div>
+                    </div>
+                    <div class="groups" number="2">
+                        <div id="toddler"></div>
+                    </div>
+                    <div class="groups" number="3">
+                        <div id="preSchool"></div>
+                    </div>
+                    <div class="groups" number="4">
+                        <div id="schooAge"></div>
+                    </div>
+                    <div class="groups" number="5">
+                        <div id="adsolescent"></div>
+                    </div>
+                </div>
+
+                
+            <!--end of interactionWrapper -->    
+            </div>
+        <!--end of wrapper-->
+        </div>
+    </body>
+</html>

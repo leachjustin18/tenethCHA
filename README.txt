@@ -1,0 +1,1 @@
+Created an appication that listens for on click on the different images.  When you click on another image the current text will hide and show the realted information to the icon you clicked.

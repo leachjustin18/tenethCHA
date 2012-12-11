@@ -1,0 +1,83 @@
+body {
+font-family:Arial, Helvetica, sans-serif;
+font-size: 13px;
+}
+
+#wrapper {
+width: 550px; 
+height: 430px;
+overflow: hidden; 
+}
+.spaceBottom {padding-bottom:10px;}
+.instructions {font-style: italic;}
+.hidden {display: none;}
+.sectionTitle {font-weight: bold;}
+
+
+#interactionWrapper {
+	width: 550px;
+	height: 315px;
+	
+}
+
+#bed {
+	width: 336px;
+	float:left;
+	height: 305px;
+	background-image: url('bkrd2.png');
+	z-index: -1;
+}
+
+#childNurseBed {
+	width: 300px;
+	height: 271px;
+	background-image: url('bkrd.png');
+	margin: 14px 0px 0px 18px;
+}
+
+
+
+#ageGroups {
+	width: 210px;
+	height: 245px;
+	float: left;
+	
+}
+
+.groups {
+	float: left;
+	cursor: pointer;
+}
+
+#infant {
+background-image: url('infant.png'); 
+width: 103px;
+height: 103px;
+}
+
+#toddler {
+background-image: url('todler.png');
+width: 103px;
+height: 103px;
+}
+
+#preSchool {
+	background-image: url('preschool.png');
+	width: 103px;
+	height: 103px;
+}
+
+#schooAge {
+	background-image: url('school-age.png');
+	width: 103px;
+height: 103px;
+}
+#adsolescent {
+	background-image: url('adolescent.png');
+	width: 103px;
+height: 103px;
+}
+
+.formatText {
+	margin: 10px;
+}
